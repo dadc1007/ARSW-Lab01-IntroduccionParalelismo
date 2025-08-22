@@ -1,7 +1,7 @@
 package edu.eci.arsw.threads;
 
 import java.util.LinkedList;
-import edu.eci.arsw.blacklistvalidator.HostBlacklistsDataSourceFacade;
+import edu.eci.arsw.spamkeywordsdatasource.HostBlacklistsDataSourceFacade;
 
 
 public class BlackListSearchThread extends Thread {
