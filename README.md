@@ -24,10 +24,11 @@ En la clase `CountThreadsMain` se crean tres hilos con los intervalos:
 - Hilo 2 → `[99..199]`
 - Hilo 3 → `[200..299]`
 
----
-
 ### 🔀 Diferencia entre `start()` y `run()`
 
 Con `start()` se crea un nuevo hilo de ejecución en la JVM, lo que permite que los tres hilos ejecuten sus ciclos de manera paralela. La salida puede aparecer intercalada, ya que depende del *scheduler* (el componente encargado de decidir qué proceso se ejecuta en la CPU y en qué momento). En cambio, con `run()` no se crea un nuevo hilo: simplemente se invoca el método como cualquier otro, por lo que los tres hilos se ejecutan de forma secuencial. En este caso, la salida será ordenada y sin intercalación.
 
 ---
+
+## 📂 Parte II - Ejercicio Black List Search
+
