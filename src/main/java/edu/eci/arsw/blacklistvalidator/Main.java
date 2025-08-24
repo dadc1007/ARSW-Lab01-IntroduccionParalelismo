@@ -15,7 +15,12 @@ public class Main {
     
     public static void main(String a[]){
         HostBlackListsValidator hblv=new HostBlackListsValidator();
-        List<Integer> blackListOcurrences=hblv.checkHost("200.24.34.55");
+        long inicio = System.nanoTime();
+        int hilos = 100;
+        List<Integer> blackListOcurrences=hblv.checkHost("202.24.34.55", hilos);
+        long fin = System.nanoTime();
+        double tiempoSegundos = (fin - inicio) / 1_000_000_000.0;
+        System.out.println("Tiempo de ejecución: " + tiempoSegundos + " segundos para "+hilos+" hilos");
         System.out.println("The host was found in the following blacklists:"+blackListOcurrences);
         
     }
